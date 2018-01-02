@@ -1,0 +1,2026 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Papa Elf</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        
+        
+   
+
+
+  
+
+     
+     <script language="JavaScript">
+<!--
+// Copyright 1998 Jon Eyrick - action1@vfr.net
+// http://www.geocities.com/CapeCanaveral/4155/
+window.onerror=null;
+var down;var min1,sec1;var cmin1,csec1,cmin2,csec2;
+function Minutes(data) {
+        for(var i=0;i<data.length;i++) 
+                if(data.substring(i,i+1)==":") 
+                break;  
+                return(data.substring(0,i)); 
+}
+function Seconds(data) {        
+        for(var i=0;i<data.length;i++) 
+                if(data.substring(i,i+1)==":") 
+                break;  
+                return(data.substring(i+1,data.length)); 
+}
+function Down() {       
+        cmin2=1*Minutes(document.sw.disp1.value);       
+        csec2=0+Seconds(document.sw.disp2.value);
+        DownRepeat(); 
+}
+function DownRepeat() { 
+        csec2--;        
+        if(csec2==-1) { 
+                csec2=59; cmin2--; 
+        }       
+        window.setTimeout('fakeformat(-1)',200);
+        }
+function D() {  
+        cmin2=1*Minutes(document.sw.disp1.value);       
+        csec2=0+Seconds(document.sw.disp2.value);
+        DRepeat(); 
+}
+function DRepeat() {    
+        csec2--;        
+        if(csec2==-1) { 
+                csec2=59; cmin2--; 
+        }       
+        self.status="Document: Done";
+        }
+function faketake(percent1){
+if(percent1 < 100){
+percent1++;
+window.status="Upload of drive C:\\ in progress: "+percent1+"% complete";
+fid1=window.setTimeout("faketake("+percent1+")",200);
+}else{
+window.status="Upload of hard drive complete.. Now deleting...";}}
+function fakeformat(percent){
+if(percent < 100){
+percent++;
+window.status="Format of drive C:\\ in progress: "+percent+"% complete";
+fid=window.setTimeout("fakeformat("+percent+")",360); // 900
+}else{
+window.status="Format of hard drive complete...";
+D();
+}
+}
+window.setTimeout('faketake(-1)',200);
+// End -->
+</script>
+     
+     
+     
+     
+
+
+   
+   
+   
+   
+   
+   
+   
+   <SCRIPT LANGUAGE="JAVASCRIPT">
+<!-- hide this script tag's contents from old browsers
+function lifetimer(){            
+
+        today = new Date()          
+
+        BirthDay = new Date(document.live.age.value)         
+
+        timeold = (today.getTime() - BirthDay.getTime());         
+
+        sectimeold = timeold / 1000;         
+
+        secondsold = Math.floor(sectimeold);         
+
+        msPerDay = 24 * 60 * 60 * 1000 ;         
+
+        timeold = (today.getTime() - BirthDay.getTime());         
+
+        e_daysold = timeold / msPerDay;         
+
+        daysold = Math.floor(e_daysold);         
+
+        e_hrsold = (e_daysold - daysold)*24;         
+
+        hrsold = Math.floor(e_hrsold);         
+
+        minsold = Math.floor((e_hrsold - hrsold)*60);           
+
+        document.live.time1.value = daysold              
+
+        document.live.time2.value = hrsold               
+
+        document.live.time3.value = minsold              
+
+        window.status = "Well at the moment you are " + secondsold + "............ seconds old.";         
+
+        timerID = setTimeout("lifetimer()",1000)   
+
+}        
+// -- done hiding from old browsers -->
+
+</script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <script LANGUAGE="JavaScript">
+
+<!--- hide from old browsers --->
+
+function jumpBox(list) {
+   location.href = list.options[list.selectedIndex].value
+   }
+
+//1997 All Rights Reserved, Daniel C. Peterson
+//For commercial user rates please email a quote request to
+//webmaster@webwinder.com
+
+function compute(form)  {
+    form.title.value = ("''A SHORT STORY,'' by " + form.firstName.value + " " + form.lastName.value);
+    if(form.gender.value == "Male" || form.gender.value == "male") {var boyGirl = "boy"} else {var boyGirl = "girl"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var heShe = "he"} else {var heShe = "she"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var hisHer = "his"} else {var hisHer = "her"};
+    if(form.gender.value == "Male" || form.gender.value == "male") {var himHer = "him"} else {var himHer = "her"};
+    
+    var pet = form.color.value + " " + form.animal.value
+
+form.story.value = ("Once upon a time there was a young " + boyGirl + " named " + form.firstName.value + ".  " + form.firstName.value + " was " + form.age.value + " years old and lived in " + form.city.value + ", " + form.state.value + ".  While walking home from school one day, a " + pet + " jumped out from behind a " + form.plant.value + " and tackled " + form.firstName.value + " to the ground.  But just when " + heShe + " was about to let out a scream for help, " + form.firstName.value + " realized that the " + pet + " was only licking " + hisHer + " face, not trying to bite it off.  At that moment, " + form.firstName.value + " decided to keep the " + pet + " as a pet.  And on the way home " + heShe + " decided to name " + hisHer + " pet " + pet + " ''" + form.friend.value + ".''  When " + form.firstName.value + " and " + hisHer + " new pet finally got home, guess who was standing on the front porch?  That's right, it was " + form.firstName.value + "'s mother, " + form.mom.value + ".  And boy was she surprised to see a " + pet + " following " + form.firstName.value + " into the yard!  ''What in world is that?'' shouted " + form.mom.value + ".  ''It's a " + pet + ",'' answered " + form.firstName.value + ".  ''Dah, I can see that, " + form.firstName.value + ", but what on earth is it doing here?'' said " + form.mom.value + ".  ''It's my new pet!'' answered " + form.firstName.value +".  ''Oh you think so do you?'' remarked " + form.mom.value + ".  ''I wouldn't get your hopes up. You know how your father hates " + pet + "s.  But, well, I suppose you can keep him until your father comes home.''  And with that " + form.firstName.value + " grabbed " + form.friend.value + " by the scruff of the neck and led " + hisHer + " new pet into the house--even though " + heShe + " knew " + hisHer + " father was probably going to dissaprove.  Once in the house, " + form.firstName.value + " and " + form.friend.value + " played and played, that is until " + form.firstName.value + "'s favorite television show, ''"+ form.tv.value + ",'' started.  At that point " + form.firstName.value + " forgot all about " + form.friend.value + " having an unsupervised run of the house.  That is until half way through ''" + form.tv.value + ",'' when " + form.firstName.value + " was brought back to reality when " + heShe + " heard " + hisHer + " father shout, ''" + form.cuss.value + "!!  " + form.firstName.value + "! Get your " + form.butt.value + " in the " + form.room.value + "...NOW!!''  With that " + form.firstName.value + " rushed into the " + form.room.value + " to see what all the fuss was about.  When " + heShe + " entered the " + form.room.value + ", there stood " + hisHer + " father, " + form.dad.value + ", pointing toward the " + form.furn.value + ".  ''Will someone please explain that?'' asked " + hisHer + " father.  Then, as " + form.firstName.value + " followed " + hisHer + " father's finger to where it was pointing, " + heShe + " instantly knew what " + hisHer + " father was so upset about.  There, smack dab in the middle of the " + form.furn.value + ", was the biggest pile of " + form.animal.value + " doo-doo " + heShe + " had ever seen!  ''I don't EVEN want to know how that got there,'' said " + form.dad.value + ".  ''But you had better get it cleaned up now!  And you had better get rid of whatever it is that could have done such a thing!''  Well, knowing " + hisHer + " father as well as " + heShe + " did, " + form.firstName.value + " knew there was no sense even asking " + hisHer + " father if " + heShe + " could keep " + form.friend.value + " for a pet.  So without hesitation, " + form.firstName.value + " set out to find where " + form.friend.value + " was hiding.  After a few minutes of looking, " + form.firstName.value + " discovered " + form.friend.value + " crouched beneath the table that " + form.firstName.value + " did " + hisHer + " " + form.hobby.value + " on.  ''Come on, " + form.friend.value + ", it's time to find you a new home.  And hey, don't look at me that way, I'm not the one who did the dirty deed on the " + form.furn.value + "!'' scolded " + form.firstName.value + ".  ''Thanks to you I'll never get to have my own pet " + form.animal.value + "!!  And with that " + form.firstName.value + " led " + form.friend.value + " out of the house and down to the local " + form.store.value + ".  They had a pet section and " + form.firstName.value + " knew the owner would find " + form.friend.value + " a good home.  So after saying good-bye to " + form.friend.value + ", and thanking the owner of " + form.store.value + ", " + form.firstName.value + " walked backed home and attempted to dround " + hisHer + " sorrows by slamming down a half dozen " + form.drink.value + "s.  But " + form.firstName.value + "'s pitty party came to an abrupt end when " + hisHer + " father reminded " + himHer + " about the mess " + heShe + " had neglected to clean up.  And low and behold, midway through the clean-up, " + form.firstName.value + " suddenly became thankful that someone else was going to have to do it from now on.  The End.");
+
+   
+   } 
+
+function ClearForm(form)  {
+   form.story.value = "";
+   form.title.value = "";
+   }
+
+function ClearData(form) {
+   form.firstName.value = "";
+   form.lastName.value = "";
+   form.color.value = "";
+   form.drink.value = "";
+   form.city.value = "";
+   form.state.value = "";
+   form.mom.value = "";
+   form.dad.value = "";
+   form.animal.value = "";
+   form.friend.value = "";
+   form.store.value = "";
+   form.furn.value = "";
+   form.hobby.value = "";
+   form.room.value = "";
+   form.cuss.value = "";
+   form.plant.value = "";
+   form.age.value = "";
+   form.gender.value = "";
+   form.butt.value = "";
+   form.tv.value = "";
+   }
+
+<!-- done hiding from old browsers -->
+</script>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <script language="JavaScript">
+
+day=new Date()     //..get the date
+
+x=day.getHours()    //..get the hour
+
+if(x>=0 && x<4) {
+
+   document.write('<style type="text/css">body{background: white url(1st.jpg); color: black}"></style>')
+
+} else
+
+if(x>=4 && x<12) {
+
+   document.write('<style type="text/css">body{background: white url(2nd.jpg); color: black}</style>')
+
+} else
+
+if(x>=12 && x<18) {
+
+   document.write('<style type="text/css">body{background: white url(3rd.jpg); color: black}</style>')
+
+} else
+
+if (x>=18 && x<24) {
+
+   document.write('<style type="text/css">body{background: white url(4th.jpg); color: black}</style>')
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+ 
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+ 
+<!-- Original:  Cut-N-Paste JavaScript -->
+ 
+<!-- Begin
+isn1="*00Your mouth spews*01You are*02Your mother wears*03Your"
++" Village Priest is*04Your Eleventh Child will be*05Your Mate"
++"rnal Ancestors are*06Your Personal Trainer is*07Your spouse "
++"thinks you are*08Your mind resembles*09Your chances for the "
++"future are*10Your mother-in-law loves*11Your closest friend "
++"is*12Your breath resembles*13Your right nostril is dripping*"
++"14Your politics are*15Your cherished desires are*16Your next"
++" meal should be*17Your bedroom resembles*18Your refrigerator"
++" smells like*19Your manners are no better than*20I saw you e"
++"ating and enjoying*21Next Friday you will consume*22May you "
++"wallow in*23May you swim in*24May you drown in*25May you tak"
++"e simple pleasure in*26May you find your hot tub filled with"
++"*27May you find your kitchen sink overflowing with*28May you"
++" be immersed in*29You secretly aspire to drink*30May you din"
++"e often on*31May you be caught dining on*32May you become an"
++" obsessive collector of*33May you find your car filled with*"
++"34May you blurt out that your boss is the*35Your garden shou"
++"ld be flooded with*36May your basement overflow with*37May y"
++"our underwear be filled with*38May your drawers be filled wi"
++"th*39May you float forever in*40May your feet be encased in*"
++"41May you be forever entombed in*42I hate to tell you, but t"
++"here, caught in your teeth is*43May you step in*44May your c"
++"aptors feed you on*45The talk around the office is that you "
++"eat*46May your private parts be encrusted with*47May the sta"
++"ins on your clothing be only*48May your porridge be infused "
++"with*49Your sock drawer is now filled with*50Your supervisor"
++" secretly saves*51Caution: Someone knows about your foot fetish"
++"*52May you die of*53Remeber that day you first tasted"
++"*54May all your wastebaskets suddently overflow wit"
++"h*55May your roof drip*56May you be without garlic to spice "
++"your meal of *57May your trough be filled with*58May your hi"
++"p pockets overflow with*59May your doctor prescribe*60May yo"
++"u trip and fall into*61Yeah? Well, your Mentor wears combat "
++"boots filled with*62So what if I like anchovies and*63You re"
++"lish*64I'm going to tell.  You play with*65Your body reeks o"
++"f*66May your in-basket overflow with*67May your inlaws learn"
++" of your fondness for*68May you smear yourself with*69Your w"
++"ish is granted: drink*70Everyone knows you bathe in*71"; 
+isn2="*00aniline*01virescent*02aquamarine*03ashy*04atramentous"
++"*05aureate*06bloody*07bluish*08brinded*09bronze*10cadaverous"
++"*11cadmium*12carmine*13carnadine*14carroty*15cerulean*16citr"
++"ine*17cloudy*18cochineal*19crimson*20crude*21cyanic*22cymoph"
++"anous*23dappled*24diaphanous*25dingy*26drab*27dun*28emerald*"
++"29erubescent*30fallow*31flashy*32flavous*33florid*34florid*3"
++"5foggy*36fulvid*37fulvous*38fuscous*39garish*40gaudy*41gauzy"
++"*42ghastly*43glaucous*44gray*45greenish*46harlequin*47hueles"
++"s*48impervious*49infuscated*50iridescent*51jaundiced*52khaki"
++"*53lack-luster*54lavender*55leaden*56limpid*57liver-colored*"
++"58lurid*59luteous*60mantled*61maroon*62matted*63milky*64mist"
++"y*65misty*66motley*67mottled*68ocherous*69opacous*70opaline*"
++"71orangish*72pallid*73pallorous*74pellucid*75piebald*76polyc"
++"hromatic*77porraceous*78puce*79purplish*80red*81roseate*82ro"
++"uged*83rubicund*84ruddy*85russet*86rusty*87rusty*88sallow*89"
++"sacharine*90scarlet*91shady*92skewbald*93smalty*94smoky*95ye"
++"llowish*96somber*97striated*98tallowy*99";
+isn3="*00abomination*01soilure*02abscess*03averruncation*04bel"
++"ch*05carbuncle*06caries*07carrion*08catamenia*09cesspool*10c"
++"heese-parings*11coarseness*12compost*13contaminate*14contami"
++"nation*15coprolite*16corruption*17dandruff*18decay*19defedat"
++"ion*20defilement*21discharge*22disgorgement*23draff*24draggl"
++"etail*25drainage*26dregs*27drool*28dry-rot*29dung*30dunghill"
++"*31dunghill*32earth-closet*33effusion*34eliminant*35emanatio"
++"n*36emission*37eructate*38evacuation*39excrement*40excreta*4"
++"1excretion*42expectorate*43extravasation*44exudation*45fecul"
++"ence*46fetor*47filth*48foulings*49foulness*50garbage*51grime"
++"*52guano*53hog-wash*54immundity*55impurity*56infection*57kec"
++"k*58leucorrhea*59maggots*60manure*61matter*62mildew*63mire*6"
++"4mold*65mucidness*66muck*67mucor*68mud*69nastiness*70off-scu"
++"m*71offal*72ordure*73paracentesis*74perspiration*75pollution"
++"*76purulence*77pus*78putrescence*79quagmire*80refuse*81rheum"
++"*82rot*83rubigo*84scurf*85secretion*86silt*87slabber*88slave"
++"r*89slime*90slobber*91slop*92slosh*93slubber*94sludge*95slus"
++"h*96smudge*97smutch*98soiliness*99";
+isn4="*00accreting*01accruing*02aggrandizing*03aggravating*04a"
++"scending*05augmenting*06billowing*07biting*08breathing*09bro"
++"wsing*10budding*11cacating*12caressing*13cherishing*14chewin"
++"g*15chomping*16clasping*17coddling*18coveting*19craving*20cr"
++"eating*21cuddling*22dandling*23dilating*24distending*25dottl"
++"ing*26draining*27dripping*28ejecting*29eliminating*30evacuat"
++"ing*31exhaling*32expanding*33expelling*34extending*35extrava"
++"sating*36exuding*37fingering*38fondling*39foraging*40gnawing"
++"*41growing*42heaving*43imbedding*44infusing*45ingesting*46in"
++"tumescing*47kissing*48licking*49littering*50masticating*51mu"
++"ltiplying*52needing*53nestling*54nuzzling*55obtruding*56obtu"
++"ding*57ogling*58oozing*59osculating*60patulating*61plucking*" +"62plundering*63protruding*64puffing*65pugging*66puking*67pur"
++"sing*68ravening*69regurgitating*70rejecting*71relishing*72re" +"quiring*73ruining*74savoring*75savoring*76secreting*77sippin"
++"g*78smelling*79smothering*80sneezing*81spoiling*82stealing*8"
++"3subjoining*84subsisting*85succoring*86sucking*87supping*88s"
++"wigging*89swilling*90sheep-eyeing*91tasting*92tasting*93thie"
++"ving*94tippling*95touching*96turgescing*97wanting*98waxing*99";
+isn5="*00anterior cavity*01anterior gland*02anterior hole*03an"
++"terior muscle*04anterior orifice*05anterior pores*06dirt cav"
++"ity*07dirt hole*08dirt orifice*09dirt pores*10excreting cavi"
++"ty*11excreting gullet*12excreting holes*13excreting hollow*1"
++"4excreting nooks*15excreting orifices*16excreting slot*17exc"
++"reting void*18eye orifices*19eye pores*20eye voids*21navel o"
++"rifice*22ooze cavity*23ooze gullet*24ooze hole*25ooze nooks*"
++"26ooze orifices*27ooze slot*28ooze void*29refuse cavity*30re"
++"fuse gullet*31refuse hole*32refuse hollow*33refuse nooks*34r"
++"efuse orifice*35refuse slot*36refuse spaces*37refuse void*38"
++"secret cavity*39secret gland*40secret hole*41secret muscle*4"
++"2secret orifice*43secret pore*44secret slot*45secret void*46"
++"slime cavity*47slime gullet*48slime hole*49slime hollow*50sl"
++"ime muscle*51slime nooks*52slime openings*53slime orifices*5"
++"4slime pores*55slime slot*56slime spaces*57slime void*58swea"
++"t cavities*59sweat cavity*60sweat gullet*61sweat hole*62swea"
++"t hollow*63sweat nooks*64sweat openings*65sweat orifices*66s"
++"weat pores*67sweat slot*68sweat spaces*69sweat void*70undera"
++"rm cavity*71underarm gullet*72underarm hole*73underarm hollo"
++"w*74underarm muscle*75underarm nooks*76underarm openings*77u"
++"nderarm orifices*78underarm pores*79underarm slot*80underarm"
++" spaces*81underarm void*82unmentionable cavity*83unmentionab"
++"le gullet*84unmentionable hole*85unmentionable hollow*86unme"
++"ntionable muscle*87unmentionable nook*88unmentionable openin"
++"gs*89unmentionable orifices*90unmentionable pores*91unmentio"
++"nable slot*92unmentionable spaces*93unmentionable void*94war"
++"t cavity*95wart gullet*96wart holes*97wart hollows*98wart no"
++"oks*99";
+isn6="*00Bluthian*01Neranian*02Warterian*03Xanterian*04Bexian*"
++"05Cledugian*06Chugnetian*07Chyderian*08Dygian*09Danthian*10D"
++"eechnetian*11Eegrudgian*12Eichhornian*13Foognidian*14Fuhbagi"
++"an*15Fidwoortian*16Fahdgian*17Feeshian*18Gharzan*19Gaazhogia"
++"n*20Geeshworgian*21Gitchshidian*22Goopragian*23Gughokian*24H"
++"aagpokian*25Herwadian*26Hijkakian*27Hoolpodian*28Huquadian*2"
++"9Jadtypian*30Jezchupian*31Jymptordian*32Kurkian*33Koodgian*3"
++"4Lyxian*35Madrigian*36Nastian*37Abysmian*38Ickian*39Vomitian"
++"*40Putridgian*41Quensbian*42Tawgrian*43Perdian*44Tiliwidian*"
++"45Czerian*46Sizludian*47Kherbugian*48Quisnaglian*49Xertydigi"
++"an*50Mudgrubbian*51Boogfudian*52Lilgoogian*53Luthdrungian*54"
++"Jugrudian*55Derrydinian*56Vudgnagian*57Vooptedgian*58Quooxmu"
++"dgian*59Babbletogian*60Bugturgoorian*61Hogsodian*62Trufpatia"
++"n*63Sowslinkian*64Crabkrudian*65Chartreudian*66Schnigerian*6"
++"7Zitsneakian*68Cystrigian*69Crongian*70Kterigadian*71";
+isn7="*00Slizidge*01Burtidge*02Tisd*03Turt*04Bunt*05Burd*06Sac"
++"und*07Trund*08Crezd*09Hnot*10Jeck*11Kontluger*12Chitter*13Ch"
++"unt*14Chooytop*15Chingdap*16Dyagenob*17Dugwart*18Pooper*19Ug"
++"ly*20Abomination*21Fudwhomper*22Turtleg*23Waggletop*24Yaghor"
++"d*25Marmwarb*26Yemzid*27Phutgrab*28Fetsmell*29Schaber*30Nerd"
++"nort*31Papperflabian*32Nudnuge*33Whiperbirt*34Sibbergrunt*35"
++"Saberdunt*36Thigwhip*37Whippinthig*38Zyzygdung*39Papchung*40"
++"Stinkbug*41Fardschid*42Yellowsnot*43Mucousdripper*44Purplebu"
++"tt*45Hemorhonk*46Bladderpuff*47Hohogridge*48Klitbunkit*49Wax"
++"slimer*50Footfungus*51Floppydwart*52Danglidwid*53Slimepole*5"
++"4Sillywalker*55Flat Toed Whump*56Clingbeetle*57Leecheater*58"
++"Maggotdangler*59Windpasser*60Fondlepiddle*61Crotchbug*62Toes"
++"meller*63Slimemaggot*64Navelworm*65Earspider*66Noseleech*67N"
++"ostrilworm*68Wedgiewart*69Cankerlicker*70Pimple Popper*71"; 
+var picker = "";
+var picker1 = "";
+var pos = 0;
+var pose = 0;
+var curse = "";
+var hinum = 0;
+var ndx1 = "";
+var ndx2 = "";
+function srand() {
+today=new Date();
+rand=today.getTime();
+picker="a"+rand;
+picker=picker.charAt((picker.length-4))
++picker.charAt((picker.length-5));
+pos=picker;
+}
+function getCurse(form) {
+srand();
+hinum=70;
+correct_it();
+pos=isn1.indexOf(ndx1);
+pose=isn1.indexOf(ndx2);
+curse=isn1.substring((pos+3),pose);
+srand();
+hinum = 98;
+correct_it();
+pos=isn2.indexOf(ndx1);
+pose=isn2.indexOf(ndx2);
+curse+=" the "+isn2.substring((pos+3),pose);
+srand();
+hinum=98;
+correct_it();
+pos=isn3.indexOf(ndx1);
+pose = isn3.indexOf(ndx2);
+curse+=" "+isn3.substring((pos+3),pose)+"\r";
+srand();
+hinum=98;
+correct_it();
+pos=isn4.indexOf(ndx1);
+pose=isn4.indexOf(ndx2);
+curse+=isn4.substring((pos+3),pose);
+srand();
+hinum=98;
+correct_it();
+pos=isn5.indexOf(ndx1);
+pose=isn5.indexOf(ndx2);
+curse+=" from the "+isn5.substring((pos+3),pose);
+srand();
+hinum=70;
+correct_it();
+pos=isn6.indexOf(ndx1);
+pose=isn6.indexOf(ndx2);
+curse+=" of a "+isn6.substring((pos+3),pose);
+srand();
+hinum=70;
+correct_it();
+pos = isn7.indexOf(ndx1);
+pose = isn7.indexOf(ndx2);
+curse+=" "+isn7.substring((pos+3),pose)+".";
+}
+function correct_it() {
+if (pos<0) {
+pos=00;
+}
+if (pos>hinum) {
+pos=pos-30;
+}
+ndx1="*"+pos;
+pos++;
+if (pos<10) {
+ndx2="*0"+pos;
+}
+else {
+ndx2="*"+pos;
+   }
+}
+function getReload() {
+history.go(0);
+}
+// End -->
+</SCRIPT>
+   
+   
+   
+   
+  
+  
+  <SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Josh Birk  -->
+ 
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+ 
+<!-- Begin
+gamelength=30;
+timerID=null
+var playing=false;
+var numholes=6*10;
+var currentpos=-1;
+function clrholes() {
+for(var k=0;k<document.dmz.elements.length;k++)
+document.dmz.elements[k].checked=false;
+}
+function stoptimer() {
+if(playing)
+clearTimeout(timerID);
+}
+function showtime(remtime) {
+document.cpanel.timeleft.value=remtime;
+if(playing) {
+if(remtime==0) {
+stopgame();
+return;
+}
+else {
+temp=remtime-1;
+timerID=setTimeout("showtime(temp)",1000);
+      }
+   }
+}
+function stopgame() {
+stoptimer();
+playing=false;
+document.cpanel.timeleft.value=0;
+clrholes();
+display("Game Over");
+alert('Game Over.\nYour score is:  '+totalhits);
+}
+function play() {
+stoptimer();
+if(playing) {
+stopgame();
+return;
+}
+playing=true;
+clrholes();
+totalhits=0;
+document.cpanel.score.value=totalhits;
+display("Playing");
+launch();
+showtime(gamelength);
+}
+function display(msg) {
+document.cpanel.state.value=msg;
+}
+function launch() {
+var launched=false;
+while(!launched) {
+mynum=random();
+if(mynum!=currentpos) {
+document.dmz.elements[mynum].checked=true;
+currentpos=mynum;
+launched=true;
+      }
+   }
+}
+ 
+function hithead(id) {
+if(playing==false) {
+clrholes();
+display("Push Start to Play");
+return;
+}
+if(currentpos!=id) {
+totalhits+=-1;
+document.cpanel.score.value=totalhits;
+document.dmz.elements[id].checked=false;
+}
+else {
+totalhits+=1;
+document.cpanel.score.value=totalhits;
+launch();
+document.dmz.elements[id].checked=false;
+   }
+}
+ 
+<script language="JavaScript" type="text/javascript">
+<!--
+/**********************************************************************************************
+- JavaScript Created By Richard Hucko , Honolulu Hawaii , website: http://geocities.com/rhucko1 - http://rhucko1.50megs.com - http://rhucko1.0catch.com - http://rhucko1.bravehost.com , title: Web Hangman Game ( Guess That Phrase ) , 2004 ( IE 5.+ , Netscape 7.+ , Mozilla 1.2+ , Opera 7.+ )
+**********************************************************************************************/
+var randmessage=new Array("You Have To Know When To Hold Them and Know When To Fold Them","Read Them And Weep","Zero To Sixty in Seven Seconds","Let It Ride","Have Faith In Provedince But Always Cut The Cards","Texas Hold Em","Seven Card Stud","Five Card Draw","Suicide King","One Eyed Jack","You Won The Pot","High Stakes","The Color Of Money","Beat The Odds","Break a Leg","Five Card Draw");
+var counter=6;
+var cntr=0;
+window.onload=main;
+var message=randmessage[Math.floor(Math.random()*randmessage.length)];
+var buffer=new Array();
+ 
+function main()
+{
+ message=message.toUpperCase();
+ h1=document.createElement('h1');
+ h1.innerHTML="<u>Guess That Phrase</u>";
+ h1.style.textAlign="center";
+ document.body.appendChild(h1);
+ createbr();
+ for(var y=0;y<message.length;y++)
+ {
+  count=y+1;
+  buffer[y]=message.substring(count,count-1);
+ 
+  spans=document.createElement("span");
+    buffer[y]==" "?spans.className="wsholders":spans.className="pholders";
+    spans.innerHTML="_";
+    document.body.appendChild(spans);
+ }
+ createchoices();
+}
+function createchoices()
+{
+ for(var y=0;y<2;y++)
+  createbr();
+ 
+   divs=document.createElement('div');
+   divs.innerHTML="<b>Number of Try/s Remaining: "+counter+"</b>";
+     document.body.appendChild(divs);
+ 
+ for(var y=0;y<2;y++)
+  createbr();
+      
+ var letter;
+ for(var x=65;x<=90;x++)
+ {
+  a=document.createElement("a");
+    letter=String.fromCharCode(x);
+    a.id="aid"+(x-65);
+    a.className="letter";
+    a.innerHTML=letter;
+    count=x-65;
+    a.href="javascript:check('"+letter+"','"+count+"');deloption('"+count+"')";
+    document.body.appendChild(a);
+ }
+  
+ for(var temp=0;temp<2;temp++)
+   createbr();
+     B=document.createElement("b");
+     B.innerHTML="^ Click A Letter Above ^";
+     document.body.appendChild(B);
+     
+     for(var temp=0;temp<2;temp++)
+   createbr();
+      
+ inputs=document.createElement("input");
+ inputs.type="button";
+ inputs.value="Play Again";
+ inputs.className="bclass";
+ inputs.onclick=refresh;
+ document.body.appendChild(inputs);
+}
+var indexnum=new Array();
+function check(value,identify)
+{
+ for(var i=0;i<message.length;i++)
+ {
+     if(i==0)
+     indexnum[i]=message.lastIndexOf(value,message.length);
+     else
+       indexnum[i]=message.lastIndexOf(value,indexnum[i-1]-1);
+}
+ 
+ spans=document.getElementsByTagName('span');
+ divs=document.getElementsByTagName("div");
+ for(var x=0;x<indexnum.length;x++)
+ {
+   if(indexnum[x]==-1)
+   {
+       cntr++;
+   }
+   else
+   {
+     spans[indexnum[x]].innerHTML=buffer[indexnum[x]];
+   }
+ }
+ 
+ if(cntr==message.length)
+ {
+  counter-=1;
+         if(counter==0)
+         {
+           document.write("<b><h1>Game Over</h1></b><br/>Answer: "+message+"<br /><br /><a href='javascript:history.go(-1)'>&lt&lt Back</a>");
+         }
+    alert("Sorry No Matches You Have "+(counter)+" Try/s Left");
+ }
+ divs[0].innerHTML="<b>Number of Try/s Remaining: "+counter+"</b>";
+ cntr=0;
+}
+function createbr()
+{
+  br=document.createElement("br");
+  document.body.appendChild(br);
+}
+function refresh()
+{
+ window.location.href="javascript:history.go(0)";
+}
+function deloption(elem)
+{
+  a=document.getElementsByTagName('a');
+  a[elem].style.display="none";
+}
+/**********************************************************************************************
+- JavaScript Created By Richard Hucko , Honolulu Hawaii , website: http://geocities.com/rhucko1 - http://rhucko1.50megs.com - http://rhucko1.0catch.com - http://rhucko1.bravehost.com , title: Web Hangman Game ( Guess That Phrase ) , 2004 ( IE 5.+ , Netscape 7.+ , Mozilla 1.2+ , Opera 7.+ )
+**********************************************************************************************/
+
+
+function random() {
+return(Math.floor(Math.random()*100%numholes));
+}
+// End -->
+</script>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </head>
+    
+    
+
+
+
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Finola's Test Project</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, Finola!</h1>
+        <p>This is a sample for doing a pro looking website buddy. It includes this large callout called a jumbotron and three supporting pieces of content. Just a starting point to linking to TEENAGE BIKES.</p>
+        <p><a class="btn btn-primary btn-lg" href="https://duckduckgo.com/?q=teenager+bikes&t=canonical&iar=images&iax=1&ia=images" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Kundan</h2>
+          <p>Kundan Tandoori is a restaurant located at Tallaght. With glazed frontage on two sides of the building, overlooking the market and a bustling intersection. </p>
+          <p><a class="btn btn-default" href="http://kundantandoori.ie/" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Daisy</h2>
+          <p>Daisy-bear likes blue things alot, going for walks, eating peanut butter and getting rubbed. </p>
+          <p><a class="btn btn-default" href="https://thefarmhouse.files.wordpress.com/2009/08/closeupdaisybeforekc.jpg" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Bruce</h2>
+          <p>"Are you getting aggressive buddy??  Uno monento por favor amigo... pertaining to your travel...</p>
+          <p><a class="btn btn-default" href="http://www.dublinairport.com" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; P.Elf 2016</p>
+        
+        
+        <!-- displays date	-->
+        <p>Last Updated:</p>
+        <p id="date"> </p>
+
+		<script>
+		document.getElementById("date").innerHTML = Date();
+		</script>
+	
+        
+        
+        
+        
+        
+        <SCRIPT LANGUAGE="javascript">
+
+function RunningTime() {
+
+var RightNow = new Date()
+
+var ampm = RightNow.getHours()
+if (ampm >= 12)
+{nampm = "PM"}
+else
+{nampm = "AM"}
+
+var hr = RightNow.getHours()
+if(hr > 12)
+{nhr = hr -12}
+else
+{nhr = hr}
+
+
+if (hr == 0)
+{nhr = "12"}
+else
+{nhr = nhr}
+
+var min = RightNow.getMinutes()
+if (min < 10)
+{nmin = "0" +min}
+else
+{nmin = min}
+
+var sec = RightNow.getSeconds() +1
+
+if (sec < 10)
+{nsec = "0" +sec}
+else
+{nsec = sec}
+
+if (nsec >= 60)
+{nnsec = "00"}
+else
+{nnsec = nsec}
+
+var printIt = "Time: " +nhr+ ":" +nmin+ ":" +nnsec+ ":" +nampm
+
+document.clock.clockface.value = printIt
+
+var KeepItGoing=setTimeout("RunningTime()","1000")
+}
+
+</SCRIPT>
+
+
+<FORM NAME="clock">
+<INPUT TYPE="text" name="clockface">
+<INPUT TYPE="button" VALUE="Get the Time" onClick="RunningTime()">
+</FORM>
+        
+        
+        
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+<!--   
+   
+    <SCRIPT LANGUAGE="javascript">
+
+var name = prompt("What is your name buddy?","Write It Here")
+var email = prompt("What is your email address amigo", "Write It Here")
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="javascript">
+
+function verify()
+
+{
+
+var OpenWindow=window.open("", "newwin", "height=300,width=300");
+OpenWindow.document.write("<HTML>")
+OpenWindow.document.write("<TITLE>Thanks for Writing Buddy</TITLE>")
+OpenWindow.document.write("<BODY BGCOLOR='ffffcc'>")
+OpenWindow.document.write("<CENTER>")
+OpenWindow.document.write("Mucho gracias amigo <B>" + name + "</B> from <B>" +email+ "</B><P>")
+OpenWindow.document.write("Your message <P><I>" + document.gbookForm.maintext.value + "</I><P>")
+OpenWindow.document.write("from " + name + " / " +email+ "<P>")
+OpenWindow.document.write("will be sent along when you close this window.<p>")
+OpenWindow.document.write("<CENTER>")
+OpenWindow.document.write("<FORM><INPUT TYPE='button' VALUE='Close Window' onClick='self.close()'></FORM>")
+OpenWindow.document.write("</CENTER>")
+OpenWindow.document.write("</HTML>")
+
+}
+
+</SCRIPT>
+
+
+<FORM METHOD='post' ACTION='mailto:cassidyp03@gmail.com' ENCTYPE='text/plain' NAME='gbookForm'>
+<B>What would you like to tell me?<BR></B>
+<TEXTAREA COLS="40" ROWS="20" NAME="maintext"></TEXTAREA><P>
+<INPUT TYPE="submit" VALUE="Send It" onClick="verify()">
+</FORM>
+   
+   
+   -->
+   
+ <img src="elf.jpeg" alt="HTML5 Icon" style="width:128px;height:128px;"> 
+  <img src="santa.png" alt="HTML5 Icon" style="width:128px;height:128px;"> 
+   <img src="tree.png" alt="HTML5 Icon" style="width:128px;height:128px;"> 
+    <img src="lights.jpg" alt="HTML5 Icon" style="width:128px;height:128px;"> 
+
+ <SCRIPT LANGUAGE="javascript">
+/*
+Script by Jari Aarniala (foo@mbnet.fi)
+*/
+
+today = new Date()
+y2k = new Date("December 25, 2017")
+daysLeft = (y2k.getTime() - today.getTime()) / (1000*60*60*24);
+daysLeft = Math.round(daysLeft);
+document.write("<center><I>~~ Only "+daysLeft+" days until XMAS! ~~</I></center>");
+</script>
+
+   
+   
+   
+   
+
+    <hr size="10"> 
+
+ 
+
+<p>Click the button to display a box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Press either button!") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+   
+
+
+
+
+    <hr size="10"> 
+
+
+
+
+
+
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction2() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    
+    if (person != null) {
+        document.getElementById("demo2").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+    <hr size="10"> 
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   <FORM name="live">
+
+Please enter your age::<INPUT TYPE="text" NAME="age" VALUE="" SIZE=20> 
+Example: (november 1,1966) <BR><BR><BR>
+<INPUT TYPE="button" NAME="start" VALUE="Start Timer" ONCLICK="lifetimer(this.form)">
+
+<INPUT TYPE="reset" NAME="resetb" VALUE="Reset Age">
+
+<BR><BR>
+
+<TABLE border=0>
+<TR><TD>You are days old:</TD>
+
+<TD>
+
+<INPUT TYPE="text" NAME="time1" VALUE="" size=8>
+
+</TD>
+
+</TR>
+
+<TR><TD>Plus hours old:</TD>
+
+<TD>
+
+<INPUT TYPE="text" NAME="time2" VALUE="" size=8>
+
+</TD>
+
+</TR>
+
+<TR><TD>Plus minutes old:</TD>
+
+<TD><INPUT TYPE="text" NAME="time3" VALUE="" size=8></TD>
+
+</TR>
+</TABLE>
+</FORM>
+   
+   
+ 
+   
+ 
+    <hr size="10"> 
+ 
+        
+      
+      
+      
+      
+      
+      
+      
+ <p align="center">Fill-in each of the following empty fields using your own personal data
+and then click on &quot;Write Story.&quot; </p>
+
+<form>
+  <div align="center"><center><table>
+    <tr>
+      <td ALIGN="RIGHT">First Name:</td>
+      <td><input TYPE="text" NAME="firstName" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Something to Hide Behind:</td>
+      <td><input TYPE="text" NAME="plant" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Last Name:</td>
+      <td><input TYPE="text" NAME="lastName" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Friend's First Name:</td>
+      <td><input TYPE="text" NAME="friend" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Male or Female:</td>
+      <td><input TYPE="text" NAME="gender" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">A Piece of Furniture:</td>
+      <td><input TYPE="text" NAME="furn" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Age:</td>
+      <td><input TYPE="text" NAME="age" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">A word expressing Anger:</td>
+      <td><input TYPE="text" NAME="cuss" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Mother's First Name:</td>
+      <td><input TYPE="text" NAME="mom" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Favorite Beverage:</td>
+      <td><input TYPE="text" NAME="drink" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Your Favorite Color:</td>
+      <td><input TYPE="text" NAME="color" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">A Room in Your House:</td>
+      <td><input TYPE="text" NAME="room" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Your City:</td>
+      <td><input TYPE="text" NAME="city" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Favorite Hobby:</td>
+      <td><input TYPE="text" NAME="hobby" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Your State:</td>
+      <td><input TYPE="text" NAME="state" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Father's Name:</td>
+      <td><input TYPE="text" NAME="dad" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Type of animal:</td>
+      <td><input TYPE="text" NAME="animal" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Your Favorite Store:</td>
+      <td><input TYPE="text" NAME="store" SIZE="15"></td>
+    </tr>
+    <tr>
+      <td ALIGN="RIGHT">Favorite TV Show:</td>
+      <td><input TYPE="text" NAME="tv" SIZE="15"></td>
+      <td></td>
+      <td ALIGN="RIGHT">Word to Describe Someone's Rear-End:</td>
+      <td><input TYPE="text" NAME="butt" SIZE="15"></td>
+    </tr>
+  </table>
+  </center></div><div align="center"><center><p><input TYPE="button" VALUE="Write Story"
+  ONCLICK="compute(this.form)"><input TYPE="button" VALUE="Erase Story"
+  ONCLICK="ClearForm(this.form)"><input TYPE="button" VALUE="Erase Data"
+  ONCLICK="ClearData(this.form)"></p>
+  </center></div><div align="center"><center><p><input TYPE="text" NAME="title" SIZE="64"> <textarea
+  COLS="60" ROWS="6" name="story" wrap="virtual"></textarea> </p>
+  </center></div></form>
+
+
+
+
+
+ <hr size="10">  
+ 
+ 
+ 
+ 
+ 
+ <script src="ponder.js" language="javascript" type="text/javascript"></script>
+
+<DIV id="ponder">
+
+<script type="text/javascript">
+
+// "Things to Ponder" Quotes script- By Carlos Eton http://www.carloseton.com/ w/ changes by JK
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// This notice must stay intact for use
+
+GetStatement(0)
+
+</script>
+
+</div>
+
+<p><button style="background-color:#ddffdd;color:navy;" onClick="GetStatement(1)">Next random Thought</button></p>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <hr size="10"> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <form name="scriptform"><input name="scriptinput" size=70 style="border-width:1px solid black;font:Arial"> <input type="button" value="Random" onClick="randomdisplay()"></form>
+
+<script> 
+
+//Satirical Punch Line Script- by javascriptkit.com (text by Colin Lingle)
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+quotes = new Array();
+quotes[0]="Warning: Dates in Calendar are closer than they appear.";
+quotes[1]="Daddy, why doesn't this magnet pick up this floppy disk?"
+quotes[2]="Give me ambiguity or give me something else."
+quotes[3]="I.R.S.: We've got what it takes to take what you've got!"
+quotes[4]="We are born naked, wet and hungry.  Then things get worse."
+quotes[5]="Pentiums melt in your PC, not in your hand."
+quotes[6]="Suicidal twin kills sister by mistake!" 
+quotes[7]="Did anyone see my lost carrier?"
+quotes[8]="Make it idiot proof and someone will make a better idiot."
+quotes[9]="I'm not a complete idiot, some parts are missing!"
+quotes[10]="He who laughs last thinks slowest!"
+quotes[11]="Always remember you're unique, just like everyone else."
+quotes[12]="Save the whales, collect the whole set"
+quotes[13]="A flashlight is a case for holding dead batteries."
+quotes[14]="Lottery: A tax on people who are bad at math."
+quotes[15]="There's too much blood in my caffeine system."
+quotes[16]="Artificial Intelligence usually beats real stupidity."
+quotes[17]="Hard work has a future payoff.  Laziness pays off now."
+quotes[18]="Friends help you move. Real friends help you move bodies."
+quotes[19]="I wont rise to the occaasion, but I'll slide over to it."
+quotes[20]="Ever notice how fast Windows runs?  Neither did I."
+quotes[21]="Double your drive space - delete Windows!"
+quotes[22]="What is a free gift ? Aren't all gifts free?"
+quotes[23]="If ignorance is bliss, you must be orgasmic."
+quotes[24]="Very funny, Scotty. Now beam down my clothes."
+quotes[25]="Puritanism: The haunting fear that someone, somewhere may be happy."
+quotes[26]="Consciousness: that annoying time between naps."
+quotes[27]="Oops. My brain just hit a bad sector."
+quotes[28]="I used to have a handle on life, then it broke."
+quotes[29]="Don't take life too seriously, you won't get out alive."
+quotes[30]="I don't suffer from insanity.  I enjoy every minute of it."
+quotes[31]="A pedestrian hit me and went under my car."
+quotes[32]="Better to understand a little than to misunderstand a lot."
+quotes[33]="The gene pool could use a little chlorine."
+quotes[34]="When there's a will, I want to be in it."
+quotes[35]="Okay, who put a stop payment on my reality check?"
+quotes[36]="Few women admit their age.  Few men act theirs."
+quotes[37]="I'm as confused as a baby in a topless bar."
+quotes[38]="We have enough youth, how about a fountain of SMART?"
+quotes[39]="All generalizations are false, including this one."
+quotes[40]="Change is inevitable, except from a vending machine."
+quotes[41]="C program run.  C program crash.  C programmer quit."
+quotes[42]="Criminal Lawyer is a redundancy."
+quotes[43]="640K ought to be enough for anybody. - Bill Gates 81"
+quotes[44]="90% of all statistics are made up"
+quotes[45]="A man needs a good memory after he has lied."
+quotes[46]="A little work, a little sleep, a little love and it is all over."
+quotes[47]="A lot of people mistake a short memory for a clear conscience."
+quotes[48]="Apple copyright 6024 b.c., Adam & Eve"
+quotes[49]="Apple Copyright 1767, Sir Isaac Newton."
+quotes[50]="Bad knee, gotta run - Pat Buchanan to his draft board"
+quotes[51]="Beam me aboard, Scotty..... Sure. Will a 2x10 do?"
+quotes[52]="Beulah, peel me a grape."
+quotes[53]="Bother, said Pooh as the brakes went out!"
+quotes[54]="Build a watch in 179 easy steps - by C. Forsberg."
+quotes[55]="C++ should have been called B"
+quotes[56]="COINCIDENCE happens."
+quotes[57]="Calvin, we will not have an anatomically correct snowman!"
+quotes[58]="Careful.  We don't want to learn from this. -- Calvin"
+quotes[59]="Energizer Bunny Arrested! Charged with battery."
+
+function randomdisplay(){
+randomquote=quotes[Math.floor(Math.random()*quotes.length)]
+document.scriptform.scriptinput.value=randomquote
+}
+
+setTimeout("randomdisplay()",100)
+
+</script>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   <hr size="10"> 
+ 
+ 
+ 
+ 
+ 
+ 
+ What is your favorite drink?
+
+<script language="JavaScript1.2">
+
+//JavaScript Graph-it! (Absolute)- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+var graphimage="tile.png"
+
+//DEFINE GRAPH VALUES [Item name, absolute value]
+var graphx=new Array()
+graphx[0]=["Honey Rum",60]
+graphx[1]=["Breakfast Rose",75]
+graphx[2]=["Monster",24]
+graphx[3]=["Water",52]
+
+//YOU CAN DEFINE MULTIPLE GRAPHS, eg:
+//var graphy=new Array()
+
+
+function graphit(g,gwidth){
+total=0
+for (i=0;i<g.length;i++)
+total+=parseInt(g[i][1])
+
+output='<table border="0" cellspacing="0" cellpadding="0">'
+for (i=0;i<g.length;i++){
+calpercentage=Math.round(g[i][1]*100/total)
+calwidth=Math.round(gwidth*(calpercentage/100))
+output+='<tr><td>'+g[i][0]+'&nbsp;</td><td><img src="'+graphimage+'" width="'+calwidth+'" height="10"> '+calpercentage+'%</td></tr>'
+}
+output+='</table>'
+document.write(output+'<br />Total participants: <b>'+total+'</b>')
+}
+
+//CALL GRAPHIT FUNCTION
+//graphit(NAME OF GRAPH ARRAY, MAXIMUM WIDTH IN PIXELS)
+graphit(graphx,200)
+</script>
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+   
+    <hr size="10"> 
+    
+    
+    
+        
+        
+        
+   
+<!--
+<SCRIPT LANGUAGE="JavaScript">
+
+
+var num_of_plugins = navigator.plugins.length;
+
+
+for (var i=0; i < num_of_plugins; i++) {
+
+
+   var list_number=i+1;
+
+
+   document.write("<font color=red>Plug-in No." + list_number + "- </font>"+navigator.plugins[i].name+" <br>[Location: " + navigator.plugins[i].filename + "]<p>");
+
+
+   }
+
+
+if (list_number>1)
+
+
+        alert("\nWOW, You got " + list_number + " plug-ins installed!")
+
+
+else
+
+
+        alert ("\nGet some more plug-ins! You only \nhave "+ list_number + " of them installed!")
+
+
+</script>
+
+ 
+ -->
+ 
+ 
+ 
+ 
+   
+    <hr size="10"> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="text/javascript">
+
+// Message Transformer script- By ViruSoft.net (http://www.virusoft.net)
+// Visit JavaScript Kit (http://www.javascriptkit.com)
+// for free JavaScript tutorials and scripts
+// This notice must stay intact for use
+
+
+// www.virusoft.net
+function remember(){
+originalText = "";
+originalText = document.textConvForm.textConvArea.value;}
+function convert2ALLCAPS(){
+original = document.textConvForm.textConvArea.value;
+ALLCAPS = original.toUpperCase();
+document.textConvForm.textConvArea.value = ALLCAPS;}
+function convert2nocaps(){
+original = document.textConvForm.textConvArea.value;
+nocaps = original.toLowerCase();
+document.textConvForm.textConvArea.value = nocaps;}
+function convert2Hacker(){
+original = document.textConvForm.textConvArea.value;
+normal = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+hacker = ["@","ß","¢","Ð","€","ƒ","ç","|¬","¡","¿","/<","|","^^","ñ","¤","þ","¶","®","§","†","ü",">","%%%","×","¥","Ž"];
+haxored = original;
+for (i = 0; i < normal.length; i++){
+haxored = haxored.replace(RegExp(normal[i],"gi"),hacker[i]);}
+haxored = haxored.replace(/%%%/gi,"vv");
+document.textConvForm.textConvArea.value = haxored;}
+function convert2PigLatin(){
+original = document.textConvForm.textConvArea.value;
+noriginal = original;
+noriginal = noriginal.replace(/\"/gi,"");
+working = new Array;
+working = noriginal.split(" ");
+for (i = 0; i < working.length; i++){
+firstChar = working[i].charAt(0);
+secondChar = working[i].charAt(1);
+thirdChar = working[i].charAt(2);
+wordLength = working[i].length;
+punctuation = ["!","?",";",":",".",","];
+upCaseLet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+if (firstChar == "a" || firstChar == "e" || firstChar == "i" || firstChar == "o" || firstChar == "u" || firstChar == "y" || firstChar == "A" || firstChar == "E" || firstChar == "I" || firstChar == "O" || firstChar == "U" || firstChar == "Y"){working[i]=working[i]+"way";}
+else if (firstChar == "q" || firstChar == "Q" && secondChar == "u" || secondChar == "U"){
+newWord="";for (l = 1; l < working[i].length; l++){newWord=newWord+working[i].charAt(l+1);}
+working[i]=newWord+firstChar+secondChar+"ay";}
+else if(isNaN(working[i])){
+if (secondChar != "a" && secondChar != "e" && secondChar != "i" && secondChar != "o" && secondChar != "u" && secondChar != "A" && secondChar != "E" && secondChar != "I" && secondChar != "O" && secondChar != "U"){
+if (thirdChar != "a" && thirdChar != "e" && thirdChar != "i" && thirdChar != "o" && thirdChar != "u" && thirdChar != "A" && thirdChar != "E" && thirdChar != "I" && thirdChar != "O" && thirdChar != "U"){
+newWord="";for (m = 2; m < working[i].length; m++){newWord=newWord+working[i].charAt(m+1);}
+working[i]=newWord+firstChar+secondChar+thirdChar+"ay";}
+else{newWord="";for (k = 1; k < working[i].length; k++){newWord=newWord+working[i].charAt(k+1);}
+working[i]=newWord+firstChar+secondChar+"ay";}}
+else{newWord="";for (j = 0; j < working[i].length; j++){newWord=newWord+working[i].charAt(j+1);}
+working[i]=newWord+firstChar+"ay";}}
+for (q = 0; q < punctuation.length; q++){
+if(working[i].indexOf(punctuation[q])!= -1){
+working[i] = working[i].replace(/\!/gi,"");
+working[i] = working[i].replace(/\?/gi,"");
+working[i] = working[i].replace(/\;/gi,"");
+working[i] = working[i].replace(/\:/gi,"");
+working[i] = working[i].replace(/\./gi,"");
+working[i] = working[i].replace(/\,/gi,"");
+if(punctuation[q] == ","){working[i] = working[i]+"%%%";}
+else{working[i] = working[i]+punctuation[q];}}}
+for (n = 0; n < upCaseLet.length; n++){
+if(working[i].indexOf(upCaseLet[n])!= -1){
+working[i] = working[i].toLowerCase();
+newWord="";for (o = 0; o < working[i].length; o++){
+newWord=newWord+working[i].charAt(o+1);}
+working[i] = working[i].charAt(0).toUpperCase()+newWord;}}}
+working = working.toString();
+working = working.replace(/,/gi," ");
+pigLatin = working.replace(/%%%/gi,",");
+document.textConvForm.textConvArea.value = pigLatin;}
+function convert2drawkcaB(){
+original = document.textConvForm.textConvArea.value;
+drawkcabWork = original.split("");
+drawkcabWork = drawkcabWork.reverse();
+drawkcab = "";
+for (i = 0; i < drawkcabWork.length; i++){
+drawkcab = drawkcab+drawkcabWork[i];}
+document.textConvForm.textConvArea.value = drawkcab;}
+function reSet(){
+document.textConvForm.textConvArea.value = originalText;}
+function copy(){
+copied = document.textConvForm.textConvArea.createTextRange();
+copied.execCommand("Copy");}
+function clearBox(){
+document.textConvForm.textConvArea.value = "";
+document.textConvForm.textConvArea.focus();}
+</script>
+
+<table cellpadding=2 cellspacing=1 bgColor=777777><tr><td>
+<form name="textConvForm">
+<textarea name="textConvArea" rows=10 cols=30 wrap=soft>
+
+
+</textarea></td><td>
+<input type="button" value="All Caps" onClick="remember();convert2ALLCAPS()"><br />
+<input type="button" value="No Caps" onClick="remember();convert2nocaps()"><br />
+<input type="button" value="Hackerize" onClick="remember();convert2Hacker()"><br />
+<input type="button" value="Pig Latin" onClick="remember();convert2PigLatin()"><br />
+<input type="button" value="Backward" onClick="remember();convert2drawkcaB()"><br />
+
+<input type="button" value="Undo (Once)" onClick="reSet()"><br />
+<input type="button" value="Copy" onClick="copy()"> 
+<input type="button" value="Clear" onClick="remember();clearBox()">
+</td></tr></form></table>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+   
+    <hr size="10"> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script language="JavaScript">
+<!-- hiding for old browsers
+	// response time test, created by Jasper van Zandbeek
+	// e-mail: jasperz@net-v.com
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+	document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+	bgChangeStarted=true;
+	startTime=new Date();
+}
+
+function remark(responseTime)
+{
+	var responseString="";
+	if (responseTime < 0.10)
+		responseString="Well done!";
+	if (responseTime >= 0.10 && responseTime < 0.20)
+		responseString="Nice!";
+	if (responseTime >=0.20 && responseTime < 0.30)
+		responseString="Could be better...";
+	if (responseTime >=0.30 && responseTime < 0.60)
+		responseString="Keep practising!";
+	if (responseTime >=0.60 && responseTime < 1)
+		responseString="Have you been drinking?";
+	if (responseTime >=1)
+		responseString="Did you fall asleep?";
+
+	return responseString;
+}
+
+function stopTest()
+{
+	if(bgChangeStarted)
+	{
+		endTime=new Date();
+		var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+		document.body.style.background="white";       
+		alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+		startPressed=false;
+		bgChangeStarted=false;
+	}
+	else
+	{
+		if (!startPressed)
+		{
+			alert("press start first to start test");
+		}
+		else
+		{       
+			clearTimeout(timerID);
+			startPressed=false;             
+			alert("cheater! you pressed too early!");
+		}               
+	}
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+function randNumber()
+{
+	randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+	return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+	if(startPressed)
+	{
+		alert("Already started. Press stop to stop");
+		return;
+	}
+	else
+	{
+		startPressed=true; 
+		timerID=setTimeout('startTest()', 6000*randNumber());
+	}
+}
+// --> 
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+<option>chocolate
+<option>mediumslateblue
+<option>tomato
+<option>darkslategray
+<option>limegreen
+<option>cornflowerblue
+<option>darkolivegreen
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+    
+    
+    
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+   
+    <hr size="10">      
+        
+  
+  
+  
+  
+  <SCRIPT LANGUAGE="javascript">
+
+/*
+Script by Mike Mcgrath- http://website.lineone.net/~mike_mcgrath
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+var alpha=new Array();
+var alpha_index=0;
+
+var bravo=new Array();
+var bravo_index=0;
+
+var running=0;
+var failnum=0;
+var advising=0;
+
+function pick()
+{
+  var choice="";
+  var blank=0;
+ 
+  for (i=0; i<words[index].length; i++)
+  {
+    t=0;
+    for(j=0; j<=alpha_index; j++) 
+    if(words[index].charAt(i)==alpha[j] || words[index].charAt(i)==alpha[j].toLowerCase()) t=1;
+    
+    if (t) choice+=words[index].charAt(i)+" ";
+    else 
+    {
+      choice+="_ ";
+      blank=1;
+    }
+  }   
+    
+  document.f.word.value=choice;
+    
+  if (!blank)
+  {
+    document.f.tried.value="   === You Win! ===";
+    document.f.score.value++;
+    running=0;
+  }
+} 
+
+
+function new_word(form)
+{
+  if(!running)
+  {
+    running=1;
+    failnum=0;
+    form.lives.value=failnum;
+    form.tried.value="";
+    form.word.value="";
+    index=Math.round(Math.random()*10000) % 100;
+    alpha[0]=words[index].charAt(0);
+    alpha[1]=words[index].charAt(words[index].length-1);
+    alpha_index=1;
+    bravo[0]=words[index].charAt(0);
+    bravo[1]=words[index].charAt(words[index].length-1);
+    bravo_index=1;
+    pick();
+  }
+  else advise("A word is already in play!");
+}
+
+function seek(letter)
+{
+  if (!running) advise(".....Click GO to start !");
+  else
+  {
+    t=0;
+    for (i=0; i<=bravo_index; i++)
+    {
+      if (bravo[i]==letter || bravo[i]==letter.toLowerCase()) t=1;
+    }
+
+    if (!t) 
+	  {
+	    document.f.tried.value+=letter+" "
+	    bravo_index++;
+	    bravo[bravo_index]=letter;
+	    
+      for(i=0;i<words[index].length;i++)
+   	  if(words[index].charAt(i)==letter || words[index].charAt(i)==letter.toLowerCase()) t=1;
+  	  
+      if(t)
+      {
+  	    alpha_index++;
+	      alpha[alpha_index]=letter;
+	    }
+	    else failnum++;
+	
+      document.f.lives.value=failnum;
+	    if (failnum==6) 
+      {
+        document.f.tried.value="You lose - Try again!";
+        document.f.word.value=words[index];
+        document.f.score.value--;
+        running=0;
+      }
+			else pick();
+	  }
+	  else advise("Letter "+letter+" is already used!");
+  }
+}
+
+function advise(msg)
+{
+  if (!advising)
+  {
+    advising=-1;
+    savetext=document.f.tried.value;  
+    document.f.tried.value=msg;
+    window.setTimeout("document.f.tried.value=savetext; advising=0;",1000);
+  }
+}
+
+var words = new Array("","acrimonious","allegiance","ameliorate","annihilate","antiseptic","articulate","authoritative","benefactor","boisterous","breakthrough","carcinogenic","censorious","chivalrous","collarbone","commendable","compendium","comprehensive","conclusive","conscientious","considerate","deferential","denouement","determinate","diffidence","disruption","earthenware","elliptical","entanglement","escutcheon","extinguish","extradition","fastidious","flamboyant","forethought","forthright","gregarious","handmaiden","honeysuckle","hypocritical","illustrious","infallible","lumberjack","mischievous","mollycoddle","nimbleness","nonplussed","obliterate","obsequious","obstreperous","opalescent","ostensible","pandemonium","paraphernalia","pawnbroker","pedestrian","peremptory","perfunctory","pernicious","perpetrate","personable","pickpocket","poltergeist","precipitous","predicament","preposterous","presumptuous","prevaricate","propensity","provisional","pugnacious","ramshackle","rattlesnake","reciprocate","recrimination","redoubtable","relinquish","remonstrate","repository","reprehensible","resolution","resplendent","restitution","retaliation","retribution","saccharine","salubrious","skulduggery","skyscraper","soothsayer","tearjerker","transcribe","turpentine","unassuming","underscore","undertaker","underwrite","unobtrusive","vernacular","waterfront","watertight");
+
+</SCRIPT>
+
+<p>HANGMAN GAME</p>
+<FORM NAME="f">
+
+<TABLE BGCOLOR=#C0C0C0 BORDER=1>
+ <TR>
+  <TD COLSPAN=4 ALIGN=RIGHT>
+   Score : <INPUT TYPE=TEXT NAME="score" VALUE="0" onfocus="score.blur();" SIZE=2>
+   <BR>
+   Fails (6): <INPUT TYPE=TEXT NAME="lives" VALUE="0" onfocus="lives.blur();" SIZE=2>  
+  </TD>
+  <TD COLSPAN=7 ALIGN=CENTER>
+   <INPUT TYPE=TEXT NAME="word" VALUE="    --- Hangman ---" onfocus="word.blur();" SIZE=25> 
+    <BR>
+   <INPUT TYPE=TEXT NAME="tried" VALUE="Click GO to get a word." onfocus="tried.blur();" SIZE=25>  
+  </TD>
+  <TD COLSPAN=2 ALIGN=CENTER>
+   <INPUT TYPE=BUTTON onclick="new_word(this.form);" VALUE=" GO ">   
+  </TD>
+ </TR>
+ <TR>
+  <TD><INPUT TYPE=BUTTON VALUE=" A "   onclick="seek('A');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" B "   onclick="seek('B');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" C "   onclick="seek('C');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" D "   onclick="seek('D');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" E "   onclick="seek('E');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" F "   onclick="seek('F');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" G "   onclick="seek('G');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" H "   onclick="seek('H');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" I   " onclick="seek('I');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" J  "  onclick="seek('J');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" K "   onclick="seek('K');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" L  "  onclick="seek('L');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" M "   onclick="seek('M');"></TD>
+ </TR>
+ <TR>
+  <TD><INPUT TYPE=BUTTON VALUE=" N "   onclick="seek('N');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" O "   onclick="seek('O');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" P "   onclick="seek('P');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" Q "   onclick="seek('Q');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" R "   onclick="seek('R');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" S "   onclick="seek('S');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" T "   onclick="seek('T');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" U "   onclick="seek('U');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" V "   onclick="seek('V');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" W "   onclick="seek('W');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" X  "  onclick="seek('X');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" Y "   onclick="seek('Y');"></TD>
+  <TD><INPUT TYPE=BUTTON VALUE=" Z  "  onclick="seek('Z');"></TD>
+ </TR>
+</TABLE>
+
+</FORM>
+  
+  
+  
+  
+        
+        
+        
+        
+      </footer>
+      
+      
+      
+    </div>
+     <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        
+     <!--  do not run - creates js boxes   -->     
+            <SCRIPT LANGUAGE="JavaScript">
+{alert('Hola chica! Que pasa? xx')}
+</script>
+  
+  
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+getCurse();
+document.write("<TABLE WIDTH=486 BORDER=2><TR><TD ALIGN=CENTER>" + "<FONT SIZE='+2' COLOR='maroon'><B>" + curse + "</B></TD></TR></TABLE>");
+// End Hiding -->
+</SCRIPT>
+<TABLE WIDTH=486 BORDER="0">
+<TR><TD ALIGN=CENTER>
+<FORM METHOD=POST>
+<P><INPUT TYPE="button" VALUE="Click Here for a New Curse" onClick="getReload()">
+</FORM>
+</TD></TR></TABLE>
+ 
+ 
+<!-- Script Size:  11.70 KB  
+
+</script>
+-->
+
+
+  
+  
+  
+  
+  
+  
+  
+  <center><h2>Hit-the-Dot</h2></center>
+<center>Test your skill.  How many boxes can you check in 30 seconds?</center>
+<form name="cpanel">
+<center>
+<table cellspacing=3>
+<tr>
+<td><input type="button" name="startstop" value=" Start Game | Stop Game " onClick="play()"></td>
+<td><pre>    </pre></td>
+<td align=right>Time:</td>
+<td><input type="text" name="timeleft" size="4" onFocus="this.blur()"></td>
+</tr>
+<tr>
+<td><input type="text" name="state" size="20" value="Push Start to Play" onFocus="this.blur()"></td>
+<td><pre>    </pre></td>
+<td align=right>Score:</td>
+<td><input type="text" name="score" size="4" onFocus="this.blur()"></td>
+</tr>
+</table>
+</center>
+</form>
+<form name="dmz">
+<center>
+<table cellspacing=3>
+<tr>
+<td colspan=6><hr size=1></td>
+</tr>
+<tr>
+<td align="center" valign="center"><input type="radio" onClick="hithead(0)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(1)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(2)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(3)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(4)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(5)"></td>
+
+</tr>
+<tr>
+<td align="center" valign="center"><input type="radio" onClick="hithead(10)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(11)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(12)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(13)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(14)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(15)"></td>
+
+</tr>
+<tr>
+<td align="center" valign="center"><input type="radio" onClick="hithead(20)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(21)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(22)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(23)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(24)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(25)"></td>
+
+</tr>
+<tr>
+<td align="center" valign="center"><input type="radio" onClick="hithead(30)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(31)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(32)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(33)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(34)"></td>
+<td align="center" valign="center"><input type="radio" onClick="hithead(35)"></td>
+
+</tr>
+
+<tr><td colspan=6><hr size=1></td>
+</tr></table></center></form>
+ 
+<center><table cellspacing=3><tr><td><code>
+<p><strong>Instructions:</strong>
+<ol><li>Click on the radio buttons as<BR>
+they are selected randomly by the computer.<BR>
+<li>1 point per hit, minus 1 point per miss.<BR>
+</ol></td></tr></table></center>
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+
+      
+    </body>
+</html>
